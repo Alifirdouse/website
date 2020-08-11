@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	      
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -816,7 +816,7 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form id="submit-form" action="">
+            <form  action="">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
               </div>
@@ -930,24 +930,6 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-      <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxlrArSeeV6mAuDvc9mb7uAGKBtJdXCZ4grnxO9/exec" class="bg-light p-4 p-md-5 contact-form",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script> 
+     
   </body>
 </html>
